@@ -4,47 +4,139 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.43.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="h-screen w-1/2 mx-auto "> <br>
-        
-        <div class="avatar flex flex-wrap">                        
-            <input type="file" class="file-input file-input-bordered file-input-accent w-full max-w-xs" /> </label>
-            <div class="mask mask-squircle w-16 h-16">
-                <img src="profile.png" /> 
-              </div>
+<body> 
+
+    <br>
+
+    <a href="user.html"><div class="avatar online float-right">  
+        <div class="w-24 rounded-full">
+          <img src="https://placeimg.com/192/192/people" />
         </div>
-       
-        <div class="form-control">  <br>
-            
-            <label class="input-group"> <span class="w-48">Name and Surname</span> <input type="text" placeholder="John & Jane Doe" class="input input-bordered w-96" /> </label> <br>
+      </div></a>
 
-            <label class="input-group"> <span class="w-48">Email</span> <input type="email" placeholder="info@site.com" class="input input-bordered w-96" /> </label>
-        </div>  
+<div class="shadow-xl mx-auto w-3/4"> <br>
+    <h1 class="text-center text-6xl">Personal Information</h1> <br> <br>
+    <div class="form-control grid grid-cols-2 gap-6 gap-x-8 justify-center">
         
-
-        </div>
+        <label class="input-group"> <span class="w-48">Name </span> 
+        <input type="text" placeholder="John & Jane Doe" class="input input-bordered w-96" /> </label>
         
-        <div class="h-1/2">
+        <label class="input-group">
+            <span class="w-48">Email</span>
+          <input type="text" placeholder="info@site.com" class="input input-bordered w-96" />
+        </label>
 
-            <img src="coral.jpg" alt="">
+        <label class="input-group"> <span class="w-48">Username</span> 
+        <input type="text" placeholder="user.name" class="input input-bordered w-96" /> </label>
 
-        </div>
+        <label class="input-group"> <span class="w-48">Phone Number </span> 
+        <input type="number" placeholder="(123) 456-7890" class="input input-bordered w-96" /> </label>
+
+        <label class="input-group">
+         <span class="w-48">Location</span>
+         <input type="text" placeholder="Boston, MA" class="input input-bordered w-96" />
+        </label>
+
+        <label class="input-group">
+            <span class="w-48">Our Services</span>
+        <select class="select select-bordered w-96 max-w-xs">
+            <option disabled selected> What service you're interested in</option>
+            <option>Tank</option>
+            <option>Sensors</option>
+            <option>Controllers</option>
+            <option>Reactors</option>
+            <option>Products</option>
+            <option>Aquarium</option>
+        </select> </label>
+        
+        
+        <div class="rating gap-1 h-12">
+            <label class="input-group"> <span class="w-48">Rate Our Services</span>
+            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-12" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400 h-12" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400 h-12" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400 h-12" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-green-400 h-12" checked   />
+        </div> </label>
+
+        <div class="rating gap-1 h-12">
+            <label class="input-group"> <span class="w-48">Rate This Website</span>
+            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-12" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400 h-12" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400 h-12" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400 h-12" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-green-400 h-12" checked   />
+        </div> </label>
+
+        <div class="w-3/4"><input type="range" min="0" max="100" value="25" class="range" step="25" />
+        <div class="w-full flex justify-between text-xs px-2">
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        </div> </div>
+
+        
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <label class="input-group">
+                    <span class="w-48">Remaining Time </span> </label>
+      
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:14;"></span>
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:59;"></span>
+              </span>
+              min
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:56;"></span>
+              </span>
+              sec
+            </div> 
+          </div> 
+    
+        <label class="input-group"> <span class="h-12 w-48">Profile Picture </span>
+        <input type="file" class="file-input file-input-bordered w-96 max-w-xs" /> </label>
+
+          <div class="avatar offline w-24">  
+            <div class="w-24 rounded-full">
+              <img src="https://placeimg.com/192/193/people" />
+            </div>
+          </div>
 
 
+          <button class="btn btn-active btn-primary col-span-2">Save Changes</button>
 
     </div>
+    <br><br>
+</div> <br><br>
 
-    toggle
-    Input group
-    Text Input
-    <select>
-    Rating
-    radio
-    File Input
-    Checkbox
-    Avatar
-    Mask
-    countdown
-    collapse
+        
+    <div>
+        
+      <h2 class="text-center text-4xl">Change Your Password</h2> <br><br>
+
+        <div class="grid grid-cols-2 w-2/3 mx-auto gap-6">  
+        
+            <label class="input-group"> <span class="w-36"> Current Password </span> 
+            <input type="password" placeholder="12345" class="input input-bordered w-96" /> </label>
+
+            <label class="input-group"> <span class="w-36"> New Password </span> 
+            <input type="password" placeholder="12345" class="input input-bordered w-96" /> </label>
+
+            <button class="btn btn-active btn-primary col-span-2">Change Your Password</button>
+
+        </div>
+
+    </div>
+    <br><br><br><br><br>
+    
 </body>
 </html>
