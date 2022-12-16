@@ -9,29 +9,83 @@
     <title>Document</title>
 </head>
 <body>
-<div>
-    <img class="h-screen object-cover mx-auto" src="tank.png" usemap="#workmap">
-    <map name="workmap">
-        <area shape="rect" coords="770,80,980,270" alt="Computer" href="sensors.html">
-        <label for="my-modal-1" class="btn"> <area shape="rect" coords="120,20,500,120"> </label>
-        <label for="my-modal-2" class="btn"> <area shape="rect" coords="120,220,360,330"> </label>
-      </map>
+
+<div class="grid grid-cols-2 gap-8">
+<!--Tank1-->
+  <div class="mx-auto h-full">
+  <div class="card card-side bg-base-100 shadow-xl h-96">
+    <figure class="w-96">
+      <iframe src="https://www.youtube.com/embed/_LNlpKWUc88?autoplay=1&" allow="fullscreen; autoplay;">
+      </iframe>
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title"> Coral Reefs  </h2>
+      <p> 🌄 An expansive yet majestic and <br> vibrant underwater journey to the <br>  world's most beautiful lagoons. </p>
+      <label for="ph1"> pH Level </label>
+      <progress id="ph1" class="progress progress-error w-56" value="90" max="100"></progress>  
+      <label for="pank1"> Health Level </label>
+      <progress id="pank1" class="progress progress-error w-56" value="25" max="100"></progress>
+      <div class="card-actions justify-end">
+        <a href="tank.html"><button class="btn btn-primary">Tank 1 </button></a>
+      </div>
+    </div>
+  </div>
 </div>
 
-
-
-<input type="checkbox" id="my-modal-2" class="modal-toggle" />
-<div class="modal">
-  <div class="modal-box relative">
-    <label for="my-modal-2" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-    <div class="flex flex-col">
-        <div class="form-control w-52">
-          <label class="cursor-pointer label">
-            <span class="label-text">  ON / OFF </span> 
-            <input type="checkbox" class="toggle toggle-primary" checked />
-          </label>
-        </div>
+<!--Tank2-->
+<div class="mx-auto h-full">
+  <div class="card card-side bg-base-100 shadow-xl h-96">
+    <figure class="w-96">
+      <iframe src="https://www.youtube.com/embed/pT9_HJr-nso?autoplay=1&" allow="fullscreen; autoplay;">
+      </iframe>
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">Jelly Cam - Bay Aquarium </h2>
+      <p>Watch as their long tentacles and lacey <br> mouth-arms move smoothly through the water.</p>
+      <label for="ph2"> pH Level </label>
+      <progress id="ph2" class="progress progress-success w-56" value="50" max="100"></progress>
+      <label for="pank2"> Health Level </label>
+      <progress id="pank1" class="progress progress-success w-56" value="100" max="100"></progress>
+      <div class="card-actions justify-end">
+        <a href="tank.html"><button class="btn btn-primary">Tank 2 </button></a>
+      </div>
+    </div>
   </div>
+</div>
+
+<!--Tank3-->
+  <div class="mx-auto h-full">
+  <div class="card card-side bg-base-100 shadow-xl h-96">
+    <figure class="w-96">
+      <iframe src="https://www.youtube.com/embed/tAuXNZ5TSlA?autoplay=1&" allow="fullscreen; autoplay;">
+      </iframe>
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">Wonders of the Red Sea !</h2>
+      <p>Dive into the stunning world <br> of the Egyptian Red Sea and explore <br> an amazing underwater world with <br> different species of beautiful coral <br> reef fishes</p>
+      <div class="card-actions justify-end">
+        <a href="tank.html"><button class="btn btn-primary">Tank 3 </button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Tank4-->
+<div class="mx-auto h-full">
+  <div class="card card-side bg-base-100 shadow-xl h-96">
+    <figure class="w-96">
+      <iframe src="https://www.youtube.com/embed/6-JYR4DX39Q?autoplay=1&" allow="fullscreen; autoplay;">
+      </iframe>
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">New movie is released!</h2>
+      <p>Click the button to watch on Jetflix app.</p>
+      <div class="card-actions justify-end">
+        <a href="tank.html"><button class="btn btn-primary">Tank 4 </button></a>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 
